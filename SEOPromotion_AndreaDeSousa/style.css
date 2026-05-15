@@ -1,0 +1,263 @@
+/* Basic Reset */ 
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+} 
+ 
+body { 
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400; 
+  line-height: 1.6; 
+  color: #2E2E2E; 
+  background-color: white; 
+  padding: 20px;
+  text-align: center; 
+} 
+ 
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Hero Section */ 
+.hero { 
+  text-align: center; 
+ background-color: white; 
+  color: #2E2E2E; 
+  padding: 40px 20px; 
+} 
+ 
+.hero-image { 
+  width: 100%; 
+  max-width: 500px; 
+  height: auto; 
+  border-radius: 12px; 
+  display: block;
+  margin: 0 auto 20px;
+} 
+ 
+/* Content Sections */ 
+.description, .features, .cta { 
+  margin: 40px auto; 
+  max-width: 800px; 
+  display: block;
+} 
+ 
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+ul { 
+  list-style-type: none; 
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block; 
+} 
+ 
+.spacing-top {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.no-bottom-space {
+    margin-bottom: 0px;
+}
+
+h1{
+    color: #0057B8;
+}
+
+h2{
+    color: #FF6B1A;
+}
+
+/* Reset & Base Styles */ 
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+} 
+ 
+body { 
+  font-family: 'Segoe UI', sans-serif; 
+  line-height: 1.6; 
+  padding: 20px; 
+  background: white; 
+  color: #333; 
+} 
+ 
+header, footer { 
+  text-align: center; 
+  margin-bottom: 20px; 
+} 
+ 
+.catalog { 
+  display: grid; 
+  grid-template-columns: 1fr; 
+  gap: 20px; 
+} 
+ 
+.product { 
+  background: #f5f7fa; 
+  border-radius: 8px; 
+  padding: 15px; 
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+} 
+ 
+.product img { 
+  width: 200px; 
+  border-radius: 6px; 
+} 
+ 
+.price { 
+  font-weight: bold; 
+  margin-top: 10px; 
+} 
+ 
+.desc { 
+  font-size: 0.9em; 
+  margin-top: 5px; 
+}
+
+/* CTA Button */ 
+
+.action { 
+  display: inline-block; 
+  background-color: #F1C40F; /* yellow accent */ 
+  color: #2C3E50; 
+  padding: 15px 25px; 
+  text-decoration: none; 
+  font-size: 1.2em; 
+  font-weight: bold; 
+  border-radius: 8px; 
+  transition: background-color 0.3s ease; 
+}
+ 
+.action:hover { 
+  background-color: #f39c12; /* darker yellow on hover */ 
+} 
+ 
+/* Footer */ 
+footer { 
+  text-align: center; 
+  padding: 20px; 
+  font-size: 0.9em; 
+}
+@media (max-width: 768px) { 
+.hero-image { 
+width: 90%; 
+} 
+.action { 
+font-size: 1em; 
+padding: 12px 20px; 
+} 
+body { 
+padding: 10px; 
+} 
+} 
+/* Tablet view: 2-column layout */ 
+@media (min-width: 600px) { 
+  .catalog { 
+    grid-template-columns: repeat(2, 1fr); 
+  } 
+} 
+ 
+/* Desktop view: 3-column layout */ 
+@media (min-width: 900px) { 
+  .catalog { 
+    grid-template-columns: repeat(3, 1fr); 
+  } 
+} 
+
+/* Hover effect for product cards */ 
+.product:hover { 
+  transform: scale(1.10); 
+  box-shadow: 0 0 15px rgba(0,0,0,0.2); 
+  transition: all 0.3s ease-in-out; 
+} 
+ 
+/* Alternate background for odd-numbered products */ 
+.product:nth-of-type(odd) { 
+  background-color: #f9f9f9; 
+} 
+
+.schedule {
+  margin: 40px auto;
+  max-width: 900px;
+}
+
+.schedule table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.schedule th,
+.schedule td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.schedule th {
+  background-color: #0B1F3A;
+  color: white;
+}
+
+.media {
+  text-align: center;
+  margin: 40px auto;
+  max-width: 900px;
+}
+
+.media-box {
+  margin: 25px 0;
+}
+
+video,
+audio {
+  max-width: 100%;
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .media {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .media h2 {
+    width: 100%;
+  }
+
+  .media-box {
+    flex: 1;
+    min-width: 300px;
+  }
+}
+
+.social-icons {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.social-icons img {
+  width: 32px;
+  margin: 0 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-icons img:hover {
+  transform: scale(1.5);
+}
